@@ -10,8 +10,14 @@ from langchain_core.messages import HumanMessage, SystemMessage
 from langchain.chains import create_history_aware_retriever, create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 
-# Set OpenAI API key (ensure your key is valid)
-os.environ["OPENAI_API_KEY"] = "sk-HQoHO1UganCjwF-tK2Hs-0wmwUHmVdiZIVwa_2SYBuT3BlbkFJSiebrtoqIo83LPDi-LaPHeLqndbP3I9tguwSnw3AMA"
+# Retrieve OpenAI API key from the .env file
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+
+if not OPENAI_API_KEY:
+    raise ValueError("OpenAI API key not found. Please set it in the .env file.")
+
+# Set OpenAI API key
+os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 
 # Streamlit app configuration
 st.set_page_config(page_title="College Data Chatbot", layout="centered")
