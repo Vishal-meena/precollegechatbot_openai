@@ -1,0 +1,18 @@
+streamlit
+langchain
+pydantic
+langchain-core
+langchain-openai
+langchain-community
+python-dotenv
+chromaDB
+# genai
+# google-ai-generativelanguage
+# google-api-core
+# google-api-python-client
+# google-auth
+# google-auth-httplib2
+# google-generativeai
+# googleapis-common-protos
+# toml
+# langchain-google-genai 
