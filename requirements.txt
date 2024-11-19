@@ -1,7 +1,6 @@
 streamlit
 langchain
 db-sqlite3
-pysqlite3
 pydantic
 langchain-core
 langchain-openai
