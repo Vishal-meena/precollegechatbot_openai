@@ -37,7 +37,7 @@ embeddings = OpenAIEmbeddings(model="text-embedding-ada-002")
 
 def load_preprocessed_vectorstore():
     try:
-        loader = Docx2txtLoader("./Updated_structred.docx")
+        loader = Docx2txtLoader("./Updated_structred_aman.docx")
         documents = loader.load()
 
         text_splitter = RecursiveCharacterTextSplitter(
