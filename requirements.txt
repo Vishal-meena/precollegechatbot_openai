@@ -6,6 +6,7 @@ langchain-openai
 langchain-community
 python-dotenv
 chromaDB
+docx2txt
 # genai
 # google-ai-generativelanguage
 # google-api-core
