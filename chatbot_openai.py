@@ -32,7 +32,8 @@ st.title("PreCollege Chatbot")
 # Initialize OpenAI LLM
 llm = OpenAI(
     model="gpt-3.5-turbo-instruct",
-    temperature=0,
+    temperature=0.75,
+    max_tokens=1000
 )
 
 # Initialize embeddings using OpenAI
@@ -46,7 +47,7 @@ def load_preprocessed_vectorstore():
         text_splitter = RecursiveCharacterTextSplitter(
             separators=["\n\n", "\n", ". ", " ", ""],
             chunk_size=3000, 
-            chunk_overlap=200)
+            chunk_overlap=1000)
         
         document_chunks = text_splitter.split_documents(documents)
 
