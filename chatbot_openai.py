@@ -32,7 +32,7 @@ st.title("PreCollege Chatbot")
 # Initialize OpenAI LLM
 llm = OpenAI(
     model="gpt-3.5-turbo-instruct",
-    temperature=0.75,
+    temperature=0,
     max_tokens=1000
 )
 
